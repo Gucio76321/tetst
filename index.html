@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NNETHERHUB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/31fbd912b8.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <p>Serwer<span>Mc</span></p>
+        </div>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#">STRONA GŁÓWNA</a></li>
+            <li>
+              <a href="#discord">DISCORD</a>
+            </li>
+            <li><a href="#" target="_blank">REGULAMIN</a></li>
+            <li><a href="#aboutus">O NAS</a></li>
+            <li><a href="#tryby">TRYBY</a></li>
+          </ul>
+        </nav>
+        <a href="#footer" class="cta"><button>Kontakt</button></a>
+        <a href="#" class="burger"><i class="fa-solid fa-bars"></i></a>
+
+        <nav class="mobile-nav hidden">
+          <ul>
+            <li><a href="#">strona główna</a></li>
+            <li><a href="#discord">discord</a></li>
+            <li><a href="#" target="_blank">regulamin</a></li>
+            <li><a href="#aboutus">o nas</a></li>
+            <li><a href="#tryby">tryby</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <main>
+      <div class="main">
+        <div class="overlay"></div>
+        <h1>Serwer<span>Mc</span></h1>
+        <p>
+          <span>Odkryj zupełnie nowy wymiar walki w Minecraft!</span><br />
+          Masz dość typowych serwerów? Szukasz czegoś więcej?<br />
+          nnetherhub.pl to miejsce dla Ciebie! Nasz serwer oferuje<br />
+          dynamiczne, emocjonujące pojedynki w wielu trybach, które<br />
+          wciągną Cię na długie godziny!
+        </p>
+        <a href="#" target="_blank" class="join"
+          ><button class="dolacz">
+            Dołącz teraz <i class="fa-brands fa-discord"></i></button
+        ></a>
+        <a href="#"
+          ><button onclick="copyText()" class="rapy" id="textToCopy">
+            serwermc
+          </button></a
+        >
+      </div>
+      <section id="aboutus" class="pierwsza">
+        <div class="aboutus">
+          <h3>DLACZEGO NASZ <span>SERWER?</span></h3>
+        </div>
+        <div class="box">
+          <p>🔥 Unikalna arena PvP - Każda walka to nowe wyzwanie!</p>
+          <p>🛠️ Autorskie skrypty - Gwarancja wyjątkowego doświadczenia!</p>
+          <p>⚔️ Balansowana rozgrywka - Równe szanse dla wszystkich graczy!!</p>
+          <p>👑 Ranking PvP - Zdominuj serwer i zdobądź tytuł mistrza!</p>
+          <p>
+            🎁 Codzienne nagrody - Zgarniaj cenne looty i wzmacniaj swoją
+            postać.
+          </p>
+        </div>
+      </section>
+      <section id="tryby" class="tryby">
+        <h3>WYBIERZ <span>TRYB</span></h3>
+        <div class="click">
+          <div class="oneblock">
+            <p class="title">ONEBLOCK</p>
+            <img src="tryb.webp" alt="minecraft" />
+
+            <a href="#"><button>Przejdź</button></a> <br />
+          </div>
+        </div>
+      </section>
+
+      <section id="discord" class="discord">
+        <h3>
+          DOŁĄCZ DO NASZEJ SPOŁECZNOŚCI NA DISCORD<br />
+          <span>aby być ze wszystkim na bieżąco</span> <br />
+          <a href="#" target="_blank"
+            ><button>dołącz <i class="fa-brands fa-discord"></i></button
+          ></a>
+        </h3>
+      </section>
+
+      <footer id="footer">
+        <img src="logo.png" alt="logo" />
+        <div class="naw">
+          <h5>Nawigacja</h5>
+          <a href="#">Strona główa</a><br />
+          <a href="https://discord.gg/fr3j7NPP">Discord</a><br />
+          <a href="#">Regulamin</a><br />
+          <a href="#aboutus">O nas</a><br />
+          <a href="#tryby">Tryby</a>
+        </div>
+        <div class="kontakt">
+          <h5>Kontakt</h5>
+          <h6><i class="fa-solid fa-envelope"></i> Email</h6>
+          <p>1 mail serwerowy</p>
+          <p>1 mail serwerowy</p>
+          <h6><i class="fa-brands fa-discord"></i> Discord</h6>
+          <p>Właściciel: </p>
+          <p>Właściciel: </p>
+        </div>
+        <div class="adres">
+          <h5>Skopiuj adres IP</h5>
+          <button onclick="copyText()" class="rapy" id="textToCopy">
+            SerwerMc
+          </button>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      function copyText() {
+        const text = document.getElementById("textToCopy").innerText;
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        document.body.appendChild(textArea);
+        textArea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textArea);
+      }
+
+      const burgerBtn = document.querySelector(".burger");
+      const mobileNav = document.querySelector(".mobile-nav");
+
+      burgerBtn.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
