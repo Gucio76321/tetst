@@ -704,12 +704,12 @@ footer button:hover {
 		font-size: 12px;
 	}
 	.discord {
-		height: 300px;
+		height: 60vh;
 	}
-	.discord img {
-		width: 200px;
-	}
+
 	.discord h3 {
+		position: relative;
+		top: 70px;
 		font-size: 16px;
 	}
 	.discord h3 span {
